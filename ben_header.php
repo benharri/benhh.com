@@ -5,7 +5,7 @@ $dir = "/";
 $menu = array(
   "About" => $dir . "about/",
   "Contact" => $dir . "contact/",
-  "Resume/CV" => $dir . "resume.pdf",
+  "Resume/CV" => $dir . "Resume.pdf",
   "CS326" => array(
     "Pattern Book" => $dir . "patternbook/"
   ),

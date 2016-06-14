@@ -5,7 +5,7 @@
     <h1>Contact</h1>
   </div>
   <div>
-    Contact me at <a href="mailto:me@benharri.com">my email</a>.
+    Contact me at <a href="mailto:me@benhharris.com">my email</a>.
   </div>
 </div>
 

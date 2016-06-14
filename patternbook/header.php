@@ -1,6 +1,6 @@
 <?php
 include "../inc/php_scripts/common_fns.php";
-$dir = "http://euclid.nmu.edu/~benharri/patternbook";
+$dir = "/patternbook";
 $menu = array(
   "Creational" => array(
     "Factory" => "$dir/?factory",

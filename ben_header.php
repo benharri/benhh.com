@@ -7,10 +7,7 @@ $menu = array(
   "Contact" => $dir . "contact/",
   "Resume/CV" => $dir . "Resume.pdf",
   "CS326" => array(
-    "Pattern Book" => $dir . "patternbook/"),
-  "CS465" => array(
-    "Photo Manager" => $dir . "photos/",
-    "Python Poll App" => "http://euclid.nmu.edu:9999/polls",
+    "Pattern Book" => $dir . "patternbook/"
   ),
   "Fun" => array(
     "Winning Solitaire" => $dir . "soli/",

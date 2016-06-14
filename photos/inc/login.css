@@ -1,0 +1,61 @@
+label {
+  display: block;
+}
+
+fieldset {
+  width: auto;
+}
+
+.alert_error {
+  background-color:red;
+  padding: 10px;
+}
+
+.alert_success {
+  background-color:green;
+  padding: 10px;
+}
+
+.alert_logged-in {
+  background-color: #999;
+  padding: 10px;
+}
+
+.align-right {
+  display:inline-block;
+  float:right;
+}
+
+body{
+  background-color:#eeeeee;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+fieldset,table,td{
+  font-size:12px;
+}
+input{
+  border:1px solid #999;
+}
+.error{
+  color:red;
+  font-size:13px;
+  padding:0px 2px;
+  background-color: #FFFFCC;
+}
+.label{
+  font-weight:bold;
+}
+.tablecss{
+  background-color:#CCC;
+}
+.whiterow{
+  background-color:#FFF;
+}
+#imageframe{
+  padding:2px;
+  overflow:hidden;
+  width:auto;
+  height:auto;
+  margin-top:5px;
+}

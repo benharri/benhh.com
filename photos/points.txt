@@ -1,0 +1,43 @@
+* can upload a file
+* can view a file
+* can delete a file
+* can list all files
+* Can count how many times a file has been viewed
+* Can list all posts/files by a user
+* can log in
+* can create an account
+* can delete an account
+* photos delete when account is removed
+* administrative account
+* can list all files by a user
+
+* reset failcount
+
+** Can make true thumbnails
+**** Can make true thumbnails without using temporary files.
+* Can verify something (email address, file name, ...) using a regular expression.
+* Do it again
+
+*** Can get metadata from a media file
+
+
+-----------------------------------------------------------------------
+Both kinds of Files
+* Can search by filename
+* can search by date or size or something else
+
+Just Image files
+   see http://ubuntuforums.org/showthread.php?t=1030649
+    -or-
+   http://php.net/manual/en/function.popen.php
+   http://www.imagemagick.org/script/convert.php
+   http://www.imagemagick.org/discourse-server/viewtopic.php?t=10557
+   http://php.net/manual/en/function.proc-open.php
+
+Users
+* Users have thumbnails
+* Can send email on X bad login attempts
+
+Regular Expressions (MUST DO THIS ONE)
+
+10 points is a C, 14 is a B, 17 is an A, 20 is the max.

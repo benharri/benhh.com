@@ -4,7 +4,7 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted"><a href="<?=$dir?>">CS326 Pattern Book</a> - <a href="http://euclid.nmu.edu/~benharri">Ben Harris</a></p>
+        <p class="text-muted"><a href="<?=$dir?>">CS326 Pattern Book</a> - <a href="/">Ben Harris</a></p>
       </div>
     </footer>
 

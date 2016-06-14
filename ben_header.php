@@ -5,21 +5,15 @@ $dir = "/";
 $menu = array(
   "About" => $dir . "about/",
   "Contact" => $dir . "contact/",
+  "Resume/CV" => $dir . "Resume.pdf",
   "CS326" => array(
     "Pattern Book" => $dir . "patternbook/"),
   "CS465" => array(
-    "Ajax Demo (Airport Lookup)" => $dir . "ajax/",
-    "Nations Game" => $dir . "nations/",
-    "Party Planner" => $dir . "partyplanner/",
     "Photo Manager" => $dir . "photos/",
-    "Spellchecker demo" => $dir . "spellchecker.php",
     "Python Poll App" => "http://euclid.nmu.edu:9999/polls",
   ),
   "Fun" => array(
     "Winning Solitaire" => $dir . "soli/",
-    "Kickball" => $dir . "kick/",
-    "Harris Woodworks" => $dir . "harriswoodworks/",
-    "Harris Woodworks Blog Version" => "http://harriswood.works/",
   ),
 );
 

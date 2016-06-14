@@ -1,6 +1,6 @@
 <?php
 include "inc/php_scripts/common_fns.php";
-$dir = "http://euclid.nmu.edu/~benharri/";
+$dir = "/";
 
 $menu = array(
   "About" => $dir . "about/",

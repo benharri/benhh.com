@@ -17,6 +17,9 @@ $app->get('/', function() use($app) {
 $app->get('/test', function() use($app) {
   return $app['twig']->render('one-page-site.twig');
 });
+$app->get('/one', function() use($app) {
+  return $app['twig']->render('one-page-site.twig');
+});
 
 // serve resume
 $app->get('/resume', function() use($app) {

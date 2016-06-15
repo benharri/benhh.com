@@ -14,6 +14,10 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
+$app->get('/test', function() use($app) {
+  return $app['twig']->render('test.twig');
+});
+
 // serve resume
 $app->get('/resume', function() use($app) {
   return $app->sendFile(__DIR__.'/../Resume.pdf');

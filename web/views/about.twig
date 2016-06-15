@@ -2,6 +2,11 @@
 
 {% block title %}About{% endblock %}
 
+{% block header %}
+  {{ parent() }}
+  <link rel="stylesheet" href="css/sticky-footer-navbar.css">
+{% endblock %}
+
 {% block content %}
 <div class="container" role="main">
   <div class="page-header">

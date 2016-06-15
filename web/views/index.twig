@@ -1,17 +1,21 @@
 {% extends "layout.html" %}
 
-{% block content %}
-  <div class="container" role="main">
-  <!-- main content -->
-    <div class="jumbotron"><h1><strong>BENJAMIN HARRIS</strong></h1></div>
+{% block header %}
+  {{ parent() }}
+  <link rel="stylesheet" href="css/sticky-footer-navbar.css">
+{% endblock %}
 
-    {# <div id="homecarousel" class="carousel slide" data-ride="carousel">
+{% block content %}
+  <div class="container-fluid" role="main">
+  <!-- main content -->
+    <div class="jumbotron"><h1><strong>BENJAMIN H. HARRIS</strong></h1></div>
+
+    <div id="homecarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#homecarousel" data-slide-to="0" class="active"></li>
         <li data-target="#homecarousel" data-slide-to="1"></li>
         <li data-target="#homecarousel" data-slide-to="2"></li>
-        <li data-target="#homecarousel" data-slide-to="3"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -40,14 +44,6 @@
           </div>
         </div>
 
-        <div class="item">
-          <img src="../img/fribourg.jpg" alt="Fribourg">
-          <div class="carousel-caption">
-            <h3>Fribourg</h3>
-            <p>Switzerland</p>
-          </div>
-        </div>
-
       </div>
 
       <!-- Left and right controls -->
@@ -59,7 +55,7 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div> #}
+    </div>
 
 
   </div>

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {% include 'header.html' %}
-  <title>{% block title %}Ben Harris{% endblock %}</title>
+  {% block header %}
+    {% include 'header.html' %}
+  {% endblock %}
+  <title>{% block title %}Benjamin Harris{% endblock %}</title>
 </head>
 
-<body>
-  {% include 'nav.html' %}
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  {% block nav %}
+    {% include 'nav.html' %}
+  {% endblock %}
 
   {% block content %}{% endblock %}
 

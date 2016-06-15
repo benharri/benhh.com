@@ -16,7 +16,7 @@ $app->get('/', function() use($app) {
 
 // serve resume
 $app->get('/resume', function() use($app) {
-  return $app->sendFile('../resume.pdf');
+  return $app->sendFile(__DIR__.'/../resume.pdf');
 });
 
 // about

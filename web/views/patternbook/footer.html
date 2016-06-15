@@ -1,0 +1,48 @@
+
+  </div>
+  <br>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted"><a href="/patternbook">CS326 Pattern Book</a> - <a href="/">Ben Harris</a></p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/bs3typeahead.js"></script>
+  <script>$(document).ready(function(){
+    $("#searchbox").typeahead({
+      source: [ {name:"Factory"},
+                {name:"Double Dispatch"},
+                {name:"Prototype"},
+                {name:"Abstract Factory"},
+                {name:"Lazy Initialization"},
+                {name:"Builder"},
+                {name:"Singleton"},
+                {name:"Null Object"},
+                {name:"Command"},
+                {name:"Observer"},
+                {name:"Mediator"},
+                {name:"Visitor"},
+                {name:"Interpreter"},
+                {name:"Iterator"},
+                {name:"Memento"},
+                {name:"Chain of Responsibility"},
+                {name:"Template Method"},
+                {name:"State"},
+                {name:"Strategy"},
+                {name:"Facade"},
+                {name:"Composite"},
+                {name:"Decorator"},
+                {name:"Future"},
+                {name:"Bridge"},
+                {name:"Adapter"},
+                {name:"Flyweight"},
+                {name:"Proxy"}],
+      updater: function(item){window.location = item.name.split(' ').join('').toLowerCase();}
+    });
+  }); </script>
+
+</body>
+</html>

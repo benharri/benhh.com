@@ -1,0 +1,48 @@
+{% extends "patternbook/layout.html" %}
+
+{% block title %}{{ pattern.page_header ~ " - Pattern Book" }}{% endblock %}
+
+{% block content %}
+<div class="container" role="main">
+
+<div class="page-header">
+  <h1>{{ pattern.page_header }}</h1>
+</div>
+
+<div class="col-xs-12 col-md-4">
+  <h3>Problem</h3>
+  <p>{{ pattern.problem|raw }}</p>
+</div>
+
+<div class="col-xs-12 col-md-4">
+  <h3>Solution</h3>
+  <p>{{ pattern.solution|raw }}</p>
+</div>
+
+<div class="col-xs-12 col-md-4">
+  <h3>Related Patterns</h3>
+  <ul>
+    {% for related_pattern in pattern.related_patterns %}
+      <li>{{ related_pattern|raw }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="col-xs-12">
+  <h3>Discussion</h3>
+  <p>{{ pattern.discussion|raw }}</p>
+</div>
+
+<div class="col-xs-12">
+  <h3>Examples</h3>
+  <p>{{ pattern.examples|raw }}</p>
+</div>
+
+  <div class="col-xs-12">
+    <h3>Code</h3>
+    <p>{{ pattern.code_explanation|raw }}</p>
+    <pre>{{ pattern.code_examples|e }}</pre>
+  </div>
+
+</div>
+{% endblock %}

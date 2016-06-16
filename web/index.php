@@ -11,6 +11,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 // index
 $app->get('/', function() use($app) {
+  // return $app->redirect($app['url_generator']->generate('onepage'));
   return $app['twig']->render('index.twig');
 });
 
@@ -19,7 +20,8 @@ $app->get('/test', function() use($app) {
 });
 $app->get('/one', function() use($app) {
   return $app['twig']->render('one-page-site.twig');
-});
+})
+->bind('onepage');
 
 // serve resume
 $app->get('/resume', function() use($app) {

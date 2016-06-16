@@ -15,11 +15,11 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
-$app->get('/test', function() use($app) {
-  return $app['twig']->render('one-page-site.twig');
-});
 $app->get('/one', function() use($app) {
-  return $app['twig']->render('one-page-site.twig');
+  return $app['twig']->render('onepage/onepage.twig');
+});
+$app->get('/test', function() use($app) {
+  return $app['twig']->render('onepage/onepage.twig');
 })
 ->bind('onepage');
 

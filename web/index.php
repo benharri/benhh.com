@@ -11,17 +11,22 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 // index
 $app->get('/', function() use($app) {
+  return $app['twig']->render('onepage/onepage.twig');
   return $app->redirect($app['url_generator']->generate('onepage'));
   return $app['twig']->render('index.twig');
 });
 
-$app->get('/test', function() use($app) {
-  return $app['twig']->render('onepage/onepage.twig');
+$app->get('/old', function() use($app) {
+  return $app['twig']->render('index.twig');
 });
-$app->get('/one', function() use($app) {
-  return $app['twig']->render('onepage/onepage.twig');
-})
-->bind('onepage');
+
+// $app->get('/test', function() use($app) {
+//   return $app['twig']->render('onepage/onepage.twig');
+// });
+// $app->get('/one', function() use($app) {
+//   return $app['twig']->render('onepage/onepage.twig');
+// })
+// ->bind('onepage');
 
 // serve resume
 $app->get('/resume', function() use($app) {
@@ -56,6 +61,7 @@ $patternbook->get('/{pattern}', function($pattern) use($app) {
 });
 
 $app->mount('/patternbook', $patternbook);
+
 
 // hello world
 $app->get('/hello/{name}', function($name) use($app) {

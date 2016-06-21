@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% block header %}
+    {% include 'tasks/header.html' %}
+  {% endblock %}
+  <title>{% block title %}Tasks{% endblock %}</title>
+</head>
+
+<body>
+  {% block nav %}
+    {% include 'tasks/nav.html' %}
+  {% endblock %}
+
+  {% block content %}{% endblock %}
+
+  {% block footer %}
+    {% include 'footer.html' %}
+  {% endblock %}
+</body>
+</html>

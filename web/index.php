@@ -9,6 +9,14 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
   'twig.path' => __DIR__.'/views',
 ));
 
+$dbopts = parse_url(getenv('DATABASE_URL'));
+$app->register(new Silex\Provider\DoctrineServiceProvider(), array(
+    'db.options' => array(
+        'driver'   => 'pdo_sqlite',
+        'path'     => __DIR__.'/app.db',
+    ),
+));
+
 // index
 $app->get('/', function() use($app) {
   return $app['twig']->render('onepage/onepage.twig');
@@ -67,5 +75,14 @@ $app->mount('/patternbook', $patternbook);
 $app->get('/hello/{name}', function($name) use($app) {
   return 'Hello '.$app->escape($name);
 });
+
+$todolist = $app['controllers_factory'];
+$todolist->get('/', function() use($app) {
+  return $app['twig']->render('tasks/tasks.twig');
+});
+$todolist->get('/{user}', function($user) use($app) {
+  return $app['twig']->render('tasks/userlist.twig', ['user' => $user]);
+});
+$app->mount('/tasks', $todolist);
 
 $app->run();

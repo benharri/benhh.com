@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 $app = new Silex\Application();
 $app['debug'] = true;
@@ -52,6 +52,11 @@ $app->get('/about', function() use($app) {
 // contact
 $app->get('/contact', function() use($app) {
   return $app['twig']->render('contact.twig');
+});
+
+// blog (grav)
+$app->get('/blog', function() use($app) {
+  return "blog/index.php";
 });
 
 // portfolio

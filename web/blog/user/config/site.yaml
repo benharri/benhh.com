@@ -1,0 +1,11 @@
+title: Ben Harris' Blog
+author:
+  name: Ben Harris
+  email: 'me@benhh.com'
+metadata:
+    description: 'Ben Harris is a student and full-stack web developer'
+
+# theme stuff
+header:
+  background: 'oredock.jpg'
+logo: 'logo.jpg'

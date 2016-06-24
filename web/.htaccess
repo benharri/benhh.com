@@ -2,7 +2,7 @@
     Options -MultiViews
 
     RewriteEngine On
-    RewriteCond %{REQUEST_URI} !^/blog
-    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !^/blog  [OR]
+    RewriteCond %{REQUEST_FILENAME} !-f [OR]
     RewriteRule ^ index.php [L]
 </IfModule>

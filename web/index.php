@@ -55,9 +55,10 @@ $app->get('/contact', function() use($app) {
 });
 
 // blog (grav)
-$app->get('/blog/', function() {
-  return include "blog/index.php";
+$app->get('/blog/[{slug}/]', function() {
+  return include "blog/$slug";
 });
+
 
 // portfolio
 $app->get('/portfolio/', function() use($app) {

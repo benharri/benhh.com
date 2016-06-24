@@ -56,7 +56,7 @@ $app->get('/contact', function() use($app) {
 
 // blog (grav)
 $app->get('/blog/', function() {
-  return "blog/index.php";
+  return include "blog/index.php";
 });
 
 // portfolio

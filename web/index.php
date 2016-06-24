@@ -51,6 +51,11 @@ $app->get('/contact', function() use($app) {
   return $app['twig']->render('contact.twig');
 });
 
+// portfolio
+$app->get('/portfolio', function() use($app) {
+  return "portfolio";
+});
+
 // solitaire
 $app->get('/solitaire', function() use($app) {
   return $app['twig']->render('solitaire.twig');

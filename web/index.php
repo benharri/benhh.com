@@ -56,6 +56,7 @@ $app->get('/contact', function() use($app) {
 
 // blog (grav)
 $app->get('/blog/[{slug}/]', function() {
+  return "hi";
   return include "blog/$slug";
 });
 

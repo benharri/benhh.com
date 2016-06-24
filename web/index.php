@@ -35,17 +35,17 @@ $app->get('/', function() use($app) {
 });
 
 // old layout
-$app->get('/gallery', function() use($app) {
+$app->get('/gallery/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
 // resume.pdf
-$app->get('/resume', function() use($app) {
+$app->get('/resume/', function() use($app) {
   return $app->sendFile(__DIR__.'/../Resume.pdf');
 });
 
 // about
-$app->get('/about', function() use($app) {
+$app->get('/about/', function() use($app) {
   return $app['twig']->render('about.twig');
 });
 
@@ -55,17 +55,17 @@ $app->get('/contact', function() use($app) {
 });
 
 // blog (grav)
-$app->get('/blog', function() use($app) {
+$app->get('/blog/', function() use() {
   return "blog/index.php";
 });
 
 // portfolio
-$app->get('/portfolio', function() use($app) {
+$app->get('/portfolio/', function() use($app) {
   return "Coming soon. Under Development.";
 });
 
 // solitaire
-$app->get('/solitaire', function() use($app) {
+$app->get('/solitaire/', function() use($app) {
   return $app['twig']->render('solitaire.html');
 });
 
@@ -82,7 +82,7 @@ $patternbook->get('/{pattern}', function($pattern) use($app) {
   return $app['twig']->render('patternbook/pattern.twig', ['pattern' => $pattern_info]);
 });
 
-$app->mount('/patternbook', $patternbook);
+$app->mount('/patternbook/', $patternbook);
 
 
 

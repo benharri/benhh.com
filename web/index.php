@@ -55,7 +55,7 @@ $app->get('/contact', function() use($app) {
 });
 
 // blog (grav)
-$app->get('/blog/', function() use() {
+$app->get('/blog/', function() {
   return "blog/index.php";
 });
 

@@ -8,4 +8,10 @@ metadata:
 # theme stuff
 header:
   background: 'oredock.jpg'
+  description: "Hi there! I'm Ben Harris. I'm a developer and I like all kinds of web stuff. These are some of my thoughts on things that I find interesting."
+  buttons:
+    button:
+      url: 'http://benhh.com'
+      text: 'my site'
+      class: 'button'
 logo: 'logo.jpg'

@@ -1,0 +1,11 @@
+email: me@benhharris.com
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Ben Harris'
+title: Admin
+state: enabled
+hashed_password: $2y$10$SmmDdmWOVwJnm1RHVm9POOtb9WLgMMtL3Es0xmLOSG22CKSliZLEy

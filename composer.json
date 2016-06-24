@@ -1,9 +1,11 @@
 {
-
     "require": {
         "silex/silex": "^2.0",
         "twig/twig": "^1.19",
         "symfony/twig-bridge": "^3.1",
         "doctrine/dbal": "^2.5"
+    },
+    "scripts": {
+      "composer install": "web/blog"
     }
 }

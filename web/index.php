@@ -53,7 +53,7 @@ $app->get('/contact', function() use($app) {
 
 // portfolio
 $app->get('/portfolio', function() use($app) {
-  return "portfolio";
+  return "Coming soon. Under Development.";
 });
 
 // solitaire

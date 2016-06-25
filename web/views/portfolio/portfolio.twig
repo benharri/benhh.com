@@ -2,8 +2,9 @@
 
 {% block title %}Portfolio | Ben Harris{% endblock %}
 
-{% block nav %}
-  {% include 'non-home-nav.html' %}
+{% block header %}
+  {{ parent() }}
+  <link rel="stylesheet" href="/static/css/sticky-footer-navbar.css">
 {% endblock %}
 
 {% block content %}
@@ -12,6 +13,7 @@
   <div class="page-header">
     <h1>Portfolio</h1>
   </div>
+  <div class="alert alert-error">This page is still under construction</div>
 </div>
 
 {% endblock %}

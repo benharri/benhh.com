@@ -31,7 +31,7 @@ $app->get('/resume/', function() use($app) {
 // solitaire
 $app->get('/solitaire/', function() use($app) {
   return $app['twig']->render('solitaire.html');
-})->bind('solitaire');
+});
 
 $app->mount('/portfolio/', include 'controllers/portfolio.php');
 

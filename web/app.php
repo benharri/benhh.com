@@ -41,18 +41,13 @@ $app->get('/resume/', function() use($app) {
 
 // portfolio
 $app->get('/portfolio/', function() use($app) {
-  return "Coming soon. Under Development.";
+  return $app['twig']->render('portfolio/portfolio.twig');
 })->bind('portfolio');
 
 // solitaire
 $app->get('/solitaire/', function() use($app) {
   return $app['twig']->render('solitaire.html');
 })->bind('solitaire');
-
-// static file serve
-// $app->get('/static/[{filepath}]', function($filepath) use($app) {
-//   return $app->sendFile(__DIR__.'/static/'.$filepath);
-// })->bind('static');
 
 // blog
 $blog = $app['controllers_factory'];

@@ -2,11 +2,7 @@
   "require": {
     "silex/silex": "^2.0",
     "twig/twig": "^1.19",
-    "symfony/twig-bridge": "^3.1",
-    "doctrine/dbal": "^2.5",
-    "ext-mbstring": "*",
-    "ext-openssl": "*",
-    "ext-curl": "*"
+    "symfony/twig-bridge": "^3.1"
   },
   "require-dev": {
       "heroku/heroku-buildpack-php": "*"

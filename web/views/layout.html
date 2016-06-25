@@ -7,7 +7,7 @@
   <title>{% block title %}Benjamin Harris{% endblock %}</title>
 </head>
 
-<body>
+<body {% block bodytags %}{% endblock %}>
   {% block nav %}
     {% include 'nav.html' %}
   {% endblock %}

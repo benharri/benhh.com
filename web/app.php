@@ -31,53 +31,46 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 
 // index
 $app->get('/', function() use($app) {
-  return $app['twig']->render('onepage/onepage.twig');
-});
-
-// old layout
-$app->get('/gallery/', function() use($app) {
   return $app['twig']->render('index.twig');
-});
+})->bind('homepage');
 
 // resume.pdf
 $app->get('/resume/', function() use($app) {
-  return $app->sendFile(__DIR__.'/../Resume.pdf');
-});
-
-// about
-$app->get('/about/', function() use($app) {
-  return $app['twig']->render('about.twig');
-});
-
-// blog (grav)
-$app->get('/blog/', function() use($app) {
-  return $app['twig']->render('blog/blog.twig');
-  return "Coming Soon. Under development.";
-});
+  return $app->sendFile(__DIR__.'/static/resume.pdf');
+})->bind('resume');
 
 // portfolio
 $app->get('/portfolio/', function() use($app) {
   return "Coming soon. Under Development.";
-});
+})->bind('portfolio');
 
 // solitaire
 $app->get('/solitaire/', function() use($app) {
   return $app['twig']->render('solitaire.html');
-});
+})->bind('solitaire');
 
+// static file serve
+// $app->get('/static/[{filepath}]', function($filepath) use($app) {
+//   return $app->sendFile(__DIR__.'/static/'.$filepath);
+// })->bind('static');
+
+// blog
+$blog = $app['controllers_factory'];
+$blog->get('/', function() use($app) {
+  return $app['twig']->render('blog/blog.twig');
+})->bind('blog-home');
+$app->mount('/blog/', $blog);
 
 // pattern book
 $patternbook = $app['controllers_factory'];
 $patternbook->get('/', function() use($app) {
   return $app['twig']->render('patternbook/index.twig');
-});
+})->bind('patternbook');
 $patternbook->get('/{pattern}/', function($pattern) use($app) {
   require "pattern.php";
   return $app['twig']->render('patternbook/pattern.twig', ['pattern' => $pattern_info]);
-});
+})->bind('pattern');
 $app->mount('/patternbook/', $patternbook);
-
-
 
 // $app->run();
 return $app;

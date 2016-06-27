@@ -2,15 +2,17 @@
 
 // blog
 $blog = $app['controllers_factory'];
-$blogposts = array("blogs" => "posts");
-$blogposts = include __DIR__."/../blogposts.php";
 
 $blog->get('/', function() use($app) {
-  return $app['twig']->render('blog/blog.twig', ['posts' => $blogposts]);
+  return $app['twig']->render('blog/blog.twig',
+    ['posts' => include __DIR__."/../blogposts.php"]
+  );
 })->bind('blog-home');
 
 $blog->get('/{slug}/', function($slug) use($app) {
-  return $app['twig']->render('blog/post.twig', ['post' => $blogposts[$slug]]);
+  return $app['twig']->render('blog/post.twig',
+    ['post' => (include __DIR__."/../blogposts.php")[$slug]]
+  );
 });
 
 return $blog;

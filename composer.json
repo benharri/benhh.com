@@ -6,6 +6,6 @@
     "mnapoli/front-yaml": "^1.5"
   },
   "require-dev": {
-      "heroku/heroku-buildpack-php": "*"
+    "heroku/heroku-buildpack-php": "*"
   }
 }

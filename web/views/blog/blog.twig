@@ -20,20 +20,20 @@
                     <small>Ben Harris</small>
                 </h1>
 
-                {% for post in posts %}
+                {% for slug, post in posts %}
                     {# <!-- First Blog Post --> #}
                     <h2>
-                        <a href="{{ post.slug }}">{{ post.title }}</a>
+                        <a href="{{ slug }}">{{ post.meta.title }}</a>
                     </h2>
                     <p class="lead">
-                        by <a href="{{ path('homepage') }}#about">{{ post.author }}</a>
+                        by <a href="{{ path('homepage') }}#about">{{ post.meta.author }}</a>
                     </p>
-                    <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.publish_date }}</p>
+                    <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.meta.publish_date }}</p>
                     <hr>
                     <img class="img-responsive" src="http://placehold.it/900x300" alt="">
                     <hr>
-                    <p>{{ post.teaser }}</p>
-                    <a class="btn btn-primary" href="{{ post.slug }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <p>{{ post.content|raw }}</p>
+                    <a class="btn btn-primary" href="{{ slug }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                     <hr>
                 {% endfor %}

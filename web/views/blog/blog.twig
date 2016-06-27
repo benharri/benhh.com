@@ -57,3 +57,13 @@
 </div>
 
 {% endblock %}
+
+{% block footer %}
+    {{ parent() }}
+    <script>
+    jQuery(document).ready(function($){
+        $(".nav>li#blog").addClass("active");
+    });
+    </script>
+{% endblock %}
+

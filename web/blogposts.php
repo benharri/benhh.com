@@ -1,4 +1,5 @@
 <?php
+require __DIR__."/../vendor/autoload.php";
 
 function tease($body, $sentencesToDisplay = 2) {
   $nakedBody = preg_replace('/\s+/', ' ', strip_tags($body));
@@ -13,6 +14,20 @@ function tease($body, $sentencesToDisplay = 2) {
   $stopAt += ($sentencesToDisplay * 2);
   return trim(substr($nakedBody, 0, $stopAt));
 }
+
+$parser = new Mni\FrontYAML\Parser();
+$dir = __DIR__."/views/blog/posts";
+$dirit = new DirectoryIterator($dir);
+foreach($dirit as $file){
+  if(!$file->isDot()){
+
+    $doc = $parser->parse(include($dir.'/'.$file));
+    echo $doc->getYAML();
+    echo $doc->getContent();
+
+  }
+}
+die();
 
 $posts = array(
   "first-post" => array(
@@ -38,3 +53,5 @@ foreach($posts as &$post){
 }
 
 return $posts;
+
+

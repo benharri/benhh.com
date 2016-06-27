@@ -13,7 +13,18 @@
   <div class="page-header">
     <h1>Portfolio</h1>
   </div>
-  <div class="alert alert-error">This page is still under construction</div>
+  <div class="alert alert-danger" role="alert">This page is still under construction</div>
 </div>
 
+{% endblock %}
+
+
+
+{% block footer %}
+    {{ parent() }}
+    <script>
+    jQuery(document).ready(function($){
+        $(".nav>li#portfolio").addClass("active");
+    });
+    </script>
 {% endblock %}

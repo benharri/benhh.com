@@ -11,6 +11,11 @@ $blog->get('/', function() use($app, $blogposts) {
 })->bind('blog-home');
 
 $blog->get('/{slug}/', function($slug) use($app, $blogposts) {
+  if(empty($blogposts[$slug])){
+    return $app['twig']->render('blog/info.twig',
+      ['alert' => 'Blog post not found. You may have a typo in your URL.']
+    );
+  }
   return $app['twig']->render('blog/post.twig',
     ['post' => $blogposts[$slug]]
   );

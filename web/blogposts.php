@@ -21,7 +21,7 @@ $dirit  = new DirectoryIterator($dir);
 foreach($dirit as $file){
   if(!$file->isDot()){
     $doc = $parser->parse(file_get_contents($dir.'/'.$file));
-    $docs[basename($file, ".md")]["meta"]    = $doc->getYAML();
+    $docs[basename($file, ".md")]            = $doc->getYAML();
     $docs[basename($file, ".md")]["content"] = $doc->getContent();
   }
 }

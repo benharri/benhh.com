@@ -12,6 +12,10 @@ $blog->get('/', function() use($app, $blogposts) {
 
 $blog->get('/{slug}/', function($slug) use($app, $blogposts) {
   if(empty($blogposts[$slug])){
+    return $app['twig']->render('blog/blog.twig',
+      ['alert' => 'Blog post not found. You may have a typo in your URL.',
+      'posts' => $blogposts]
+    );
     return $app['twig']->render('blog/info.twig',
       ['alert' => 'Blog post not found. You may have a typo in your URL.']
     );

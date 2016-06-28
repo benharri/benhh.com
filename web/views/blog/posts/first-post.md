@@ -1,5 +1,5 @@
 ---
-title: first post
+title: My First Post
 author: Ben Harris
 publish_date: Today
 ---

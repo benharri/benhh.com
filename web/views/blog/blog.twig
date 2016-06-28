@@ -20,6 +20,10 @@
                     <small>Ben Harris</small>
                 </h1>
 
+                {% if alert is defined %}
+                    <div class="alert alert-danger" role="alert">{{ alert or "" }}</div>
+                {% endif %}
+
                 {% for slug, post in posts %}
                     {# <!-- First Blog Post --> #}
                     <h2>

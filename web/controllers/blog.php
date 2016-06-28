@@ -2,7 +2,7 @@
 
 // blog
 $blog = $app['controllers_factory'];
-$blogposts = include __DIR__."/../blogposts.php";
+$blogposts = include "blogposts.php";
 
 $blog->get('/', function() use($app, $blogposts) {
   return $app['twig']->render('blog/blog.twig',

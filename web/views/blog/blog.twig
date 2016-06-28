@@ -21,7 +21,7 @@
                 </h1>
 
                 {% if alert is defined %}
-                    <div class="alert alert-danger" role="alert">{{ alert or "" }}</div>
+                    <div class="alert alert-danger" role="alert">{{ alert }}</div>
                 {% endif %}
 
                 {% for slug, post in posts %}

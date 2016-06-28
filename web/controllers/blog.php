@@ -16,9 +16,6 @@ $blog->get('/{slug}/', function($slug) use($app, $blogposts) {
       ['alert' => 'Blog post not found. You may have a typo in your URL.',
       'posts' => $blogposts]
     );
-    return $app['twig']->render('blog/info.twig',
-      ['alert' => 'Blog post not found. You may have a typo in your URL.']
-    );
   }
   return $app['twig']->render('blog/post.twig',
     ['post' => $blogposts[$slug]]

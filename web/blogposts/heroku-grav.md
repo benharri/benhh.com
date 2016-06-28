@@ -1,7 +1,9 @@
 ---
-title: Hello World
-author: Ben Harris
+title: Heroku and Grav flat-file CMS
 publish_date: 2016-06-24
+image:
+  src: /static/img/lighthouse.jpg
+  alt: Marquette Lighthouse
 ---
 
 # Hello world

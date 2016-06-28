@@ -26,20 +26,24 @@
 
                 {% for slug, post in posts %}
                     {# <!-- First Blog Post --> #}
-                    <h2>
-                        <a href="{{ slug }}">{{ post.title }}</a>
-                    </h2>
-                    <p class="lead">
-                        by <a href="{{ path('homepage') }}#about">{{ post.author }}</a>
-                    </p>
-                    <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}</p>
-                    <hr>
-                    <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-                    <hr>
-                    <p>{{ post.teaser|raw }}</p>
-                    <a class="btn btn-primary" href="{{ slug }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    {% if post.published is not defined or post.published %}
+                        <h2>
+                            <a href="{{ slug }}">{{ post.title }}</a>
+                        </h2>
+                        <p class="lead">
+                            by <a href="{{ post.author_url is defined ? post.author_url : path('homepage')~"#about" }}">{{ post.author ?? "Ben Harris" }}</a>
+                        </p>
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}</p>
+                        <hr>
+                        {% if post.image is defined %}
+                            <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
+                            <hr>
+                        {% endif %}
+                        <p>{{ post.teaser|raw }}</p>
+                        <a class="btn btn-primary" href="{{ slug }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-                    <hr>
+                        <hr>
+                    {% endif %}
                 {% endfor %}
 
                 {# <!-- Pager --> #}

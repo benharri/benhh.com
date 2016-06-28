@@ -32,7 +32,7 @@
                     <p class="lead">
                         by <a href="{{ path('homepage') }}#about">{{ post.author }}</a>
                     </p>
-                    <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.publish_date }}</p>
+                    <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}</p>
                     <hr>
                     <img class="img-responsive" src="http://placehold.it/900x300" alt="">
                     <hr>

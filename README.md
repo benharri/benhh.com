@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/benharri/benhh.com.svg?branch=master)](https://travis-ci.org/benharri/benhh.com)
+
 This is my website
 
 hosted on [heroku.com](http://heroku.com)

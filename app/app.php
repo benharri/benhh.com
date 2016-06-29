@@ -1,10 +1,8 @@
 <?php
-
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
-// $app['debug'] = true;
-
+$app['debug'] = true;
 
 ///////////////////////////////////////////////////////////////////////
 // SERVICE PROVIDERS
@@ -33,11 +31,9 @@ $app->get('/solitaire/', function() use($app) {
   return $app['twig']->render('solitaire.html');
 });
 
-$app->mount('/portfolio/', include 'controllers/portfolio.php');
+// app/controllers
+$app->mount('/portfolio/', new benharri\PortfolioController());
+$app->mount('/blog/', new benharri\BlogController());
+$app->mount('/patternbook/', new benharri\PatternbookController());
 
-$app->mount('/blog/', include 'controllers/blog.php');
-
-$app->mount('/patternbook/', include 'controllers/patternbook.php');
-
-// $app->run();
 return $app;

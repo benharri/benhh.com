@@ -12,18 +12,6 @@ When I started building a website (sparked by the purchase of my first personal 
 
 I had already decided that I would use a free dyno on [Heroku](https://heroku.com) for hosting.
 
-### Several systems came to mind:
-+ [Django](https://djangoproject.com/)
-    * Django's opinionated Model model seemed a bit much for a relatively static site
-    * It would be a great learning experience in Python
-+ [Vanilla PHP](https://php.net)
-    * I have a lot of experience in vanilla PHP at my internship at [Northern Michigan University](http://nmu.edu) working in the Information Services department where I develop web applications for internal use.
-    * I often find myself frustrated with PHP's quirkiness and wouldn't learn new material.
-+ [Silex](https://silex.sensiolabs.com)
-    * This is a new micro-framework built using bare components of the much larger [Symfony](https://symfony.com) framework.
-    * I discovered Silex in [Heroku's PHP deployment guide](https://devcenter.heroku.com/articles/getting-started-with-php) where I noticed that it was small enough to not draw unneeded overhead and extensible enough for my website to grow as it needed.
-    * This is the framework that I eventually decided to use for my site.
-
 As I researched additional solutions, I came upon the world of the PHP CMS (Content Management System, for the uninitiated). Just the sheer number and variety of CMS is [terrifying](https://en.wikipedia.org/wiki/List_of_content_management_systems#PHP). 
 
 The free tier for databases in Heroku felt lacking in peace of mind and ease of setup so I continued into the realm of the "flat-file" CMS.

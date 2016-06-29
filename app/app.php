@@ -20,12 +20,12 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 // index
 $app->get('/', function() use($app) {
-  return $app['twig']->render('index.twig');
+  return $app['twig']->render('index.twig', ["scrollnav" => true]);
 })->bind('homepage');
 
 // resume.pdf
 $app->get('/resume/', function() use($app) {
-  return $app->sendFile(__DIR__.'/static/resume.pdf');
+  return $app->sendFile(__DIR__.'/../web/static/resume.pdf');
 })->bind('resume');
 
 // solitaire

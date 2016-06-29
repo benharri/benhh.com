@@ -746,7 +746,7 @@ case "nullobject":
   $solution = "We create a object that implements the desired interface and helps to eliminate conditional code by defining the behavior by defining a default behavior for an empty body.";
   $discussion = "The Null Object is very predictable and allows us to test certain conditions without explicitly checking them in a conditional. It's useful precisely because it does nothing.";
   $examples = "We can iterate through a linked list. The last node in the chain will be a Null node. When we access it, it halts the iteration process. That way, we don't have to check each node to see if it's null, the standard way to check the existence. The end-of-list behavior we are trying to create is defined in our Null Object, therefore eliminating the need for costly conditionals.";
-  $code_explanation = "This Null List allows us to visit the entire list (See <a href=\"$dir/?visitor\">Visitor</a> Pattern). If we don't use the Null Object, we would get many NullObjectExceptions. With it, the Null Object itself knows what to do.";
+  $code_explanation = "This Null List allows us to visit the entire list (See <a href=\"/patternbook/visitor\">Visitor</a> Pattern). If we don't use the Null Object, we would get many NullObjectExceptions. With it, the Null Object itself knows what to do.";
   $code_examples = <<<'EOT'
 public abstract class List{
   public abstract List getTail();

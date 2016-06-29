@@ -6,7 +6,7 @@ publish_date: 2016-06-28
 image:
   src: /img/fribourg.jpg
   alt: Fribourg
-published: true
+published: false
 ---
 # h1 Heading 8-)
 ## h2 Heading

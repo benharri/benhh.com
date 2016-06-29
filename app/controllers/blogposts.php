@@ -27,7 +27,7 @@ function tease($body, $sentencesToDisplay = 2) {
 }
 
 foreach($posts as &$post){
-  $post["teaser"] = tease($post["content"], 3);
+  $post["teaser"] = substr($post["content"], 0, 200). "...";
 }
 
 return $posts;

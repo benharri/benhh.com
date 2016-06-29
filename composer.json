@@ -6,9 +6,6 @@
     "mnapoli/front-yaml": "^1.5"
   },
   "require-dev": {
-    "heroku/heroku-buildpack-php": "*",
-    "phpunit/phpunit": "5.4.*",
-    "symfony/browser-kit": "^3.1",
-    "symfony/css-selector": "^3.1"
+    "heroku/heroku-buildpack-php": "*"
   }
 }

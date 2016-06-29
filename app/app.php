@@ -25,7 +25,7 @@ $app->get('/', function() use($app) {
 
 // resume.pdf
 $app->get('/resume/', function() use($app) {
-  return $app->sendFile(__DIR__.'/../web/static/resume.pdf');
+  return $app->sendFile(__DIR__.'/../web/resume.pdf');
 })->bind('resume');
 
 // solitaire

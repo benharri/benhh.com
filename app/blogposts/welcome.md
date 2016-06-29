@@ -2,7 +2,7 @@
 title: Welcome To My Blog
 publish_date: 2016-06-27
 image:
-  src: /static/img/me.jpg
+  src: /img/me.jpg
   alt: Me
 ---
 

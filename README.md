@@ -1,6 +1,6 @@
 This is my website
 
-hosted on [heroku.com](http://heroku.com)
+hosted with [heroku.com](http://heroku.com)
 
 ## Technologies used:
 

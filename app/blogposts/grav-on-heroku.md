@@ -41,5 +41,5 @@ This is a useless setup for a Grav application where everything is a file. This 
 
 I chose to ditch the Admin plugin. Making changes to the project from within the filesystem in [my text editor](https://sublimetext.com/3) was totally acceptable.
 
-Not long after trying to integrate a Grav app within the Silex application that is my website (rather than linking to the Grav app through a subdomain of benhh.com), I gave up Grav for my blog entirely and decided to roll my own blogging solution.
+Not long after trying to integrate a Grav app within the Silex application that is my website (rather than linking to the Grav app through a subdomain of benhh.com), I gave up Grav for my blog entirely and decided to roll my own [blogging solution](/blog/silex).
 

@@ -40,7 +40,7 @@ class BlogController implements ControllerProviderInterface
       return $app['twig']->render('blog/post.twig',
         ['post' => $blogposts[$slug]]
       );
-    });
+    })->bind('blog-post');
 
     return $blog;
   }

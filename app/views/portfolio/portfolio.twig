@@ -16,8 +16,13 @@
   <div class="alert alert-danger" role="alert">This page is still under construction</div>
   <p>Here's some work that I'm proud of</p>
   <a href="{{ path("patternbook") }}" class="btn btn-default" role="button"><img src="/img/favicon-16x16.png"> My CS326 Patternbook</a>
+  <div class="btn-group">
   <a href="https://github.com/benharri" class="btn btn-primary" role="button"><span class="fa fa-github"></span> Github</a>
-  <a href="https://github.com/benharri/benhh.com" class="btn btn-primary"><span class="fa fa-github"></span> This site on Github</a>
+  <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="https://github.com/benharri/benhh.com"><span class="fa fa-github"></span> This site on Github</a></li>
+  </ul>
+</div>
 </div>
 
 {% endblock %}

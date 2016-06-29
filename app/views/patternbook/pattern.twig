@@ -1,6 +1,13 @@
-{% extends "patternbook/layout.html" %}
+{% extends "layout.html" %}
 
 {% block title %}{{ pattern.page_header ~ " - Pattern Book" }}{% endblock %}
+
+{% block header %}
+  {{ parent() }}
+  {% include 'patternbook/header.html' %}
+{% endblock %}
+
+{% block nav %}{% include 'patternbook/nav.html' %}{% endblock %}
 
 {% block content %}
 <div class="container" role="main">
@@ -46,3 +53,5 @@
 
 </div>
 {% endblock %}
+
+{% block footer %}{% include 'patternbook/footer.html' %}{% endblock %}

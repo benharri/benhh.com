@@ -4,7 +4,7 @@ namespace benharri\tests;
 
 use Silex\WebTestCase;
 
-class YourTest extends WebTestCase {
+class PortfolioTest extends WebTestCase {
   public function createApplication() {
     $app = require __DIR__.'/../app/app.php';
     $app['debug'] = true;
@@ -13,12 +13,11 @@ class YourTest extends WebTestCase {
     return $app;
   }
 
-  public function testHomepage() {
+  public function testPortfolioHomepage() {
     $client = $this->createClient();
-    $crawler = $client->request('GET', '/');
+    $crawler = $client->request('GET', '/portfolio/');
 
     $this->assertTrue($client->getResponse()->isOk());
-    $this->assertCount(1, $crawler->filter('h1:contains("BENJAMIN HAMILTON HARRIS")'));
 
   }
 

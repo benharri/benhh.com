@@ -1,9 +1,9 @@
 <?php
-namespace benharri;
+namespace benharri\controllers;
 use Silex\Application;
 use Silex\Api\ControllerProviderInterface;
 // blog
-class BlogController implements ControllerProviderInterface
+class Blog implements ControllerProviderInterface
 {
   public function connect(Application $app){
 

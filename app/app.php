@@ -32,8 +32,8 @@ $app->get('/solitaire/', function() use($app) {
 });
 
 // app/controllers
-$app->mount('/portfolio/', new benharri\PortfolioController());
-$app->mount('/blog/', new benharri\BlogController());
-$app->mount('/patternbook/', new benharri\PatternbookController());
+$app->mount('/portfolio/', new benharri\controllers\Portfolio());
+$app->mount('/blog/', new benharri\controllers\Blog());
+$app->mount('/patternbook/', new benharri\controllers\Patternbook());
 
 return $app;

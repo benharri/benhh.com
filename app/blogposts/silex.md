@@ -5,7 +5,7 @@ published: false
 ---
 ### Several systems I considered for my website:
 + [Django](https://djangoproject.com/)
-    * Django's opinionated Model model and strong database ties seemed a bit much for a relatively static site
+    * Django's opinionated Model model with its strong database ties seemed a bit much for a relatively static site
     * It would be a great learning experience in Python
 + [Vanilla PHP](https://php.net)
     * I have a lot of experience in vanilla PHP at my internship at [Northern Michigan University](http://nmu.edu) working in the Information Services department where I develop web applications for internal use.

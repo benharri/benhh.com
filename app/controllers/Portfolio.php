@@ -1,10 +1,10 @@
 <?php
 
-namespace benharri;
+namespace benharri\controllers;
 use Silex\Application;
 use Silex\Api\ControllerProviderInterface;
 
-class PortfolioController implements ControllerProviderInterface
+class Portfolio implements ControllerProviderInterface
 {
   public function connect(Application $app){
     // portfolio route controller

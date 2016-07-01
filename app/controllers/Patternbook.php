@@ -1,9 +1,9 @@
 <?php
-namespace benharri;
+namespace benharri\controllers;
 use Silex\Application;
 use Silex\Api\ControllerProviderInterface;
 
-class PatternbookController implements ControllerProviderInterface
+class Patternbook implements ControllerProviderInterface
 {
   public function connect(Application $app){
     // pattern book

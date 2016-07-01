@@ -5,9 +5,6 @@ image:
   src: /img/lighthouse.jpg
   alt: Marquette Lighthouse
 ---
-
-## Deploying Grav on Heroku
-
 When I started building a website (sparked by the purchase of my first personal domain name), I started looking into many different solutions to my web development process. 
 
 I had already decided that I would use a free dyno on [Heroku](https://heroku.com) for hosting.

@@ -5,6 +5,7 @@ use Silex\Api\ControllerProviderInterface;
 // blog
 class Blog implements ControllerProviderInterface
 {
+
   public function connect(Application $app){
 
     $blog = $app['controllers_factory'];
@@ -21,7 +22,8 @@ class Blog implements ControllerProviderInterface
     }
 
     foreach($blogposts as &$post){
-      $post["teaser"] = substr($post["content"], 0, 200). "...";
+      preg_match('~([A-z0-9 ,.]|<.*?>){1,300}(?=\s+)~', $post["content"], $matches, PREG_OFFSET_CAPTURE);
+      $post["teaser"] = $matches[0][0] . "...";
     }
 
     $blog->get('/', function() use($app, $blogposts) {

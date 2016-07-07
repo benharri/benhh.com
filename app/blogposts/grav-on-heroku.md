@@ -4,6 +4,13 @@ publish_date: 2016-06-24
 image:
   src: /img/lighthouse.jpg
   alt: Marquette Lighthouse
+tags:
+    - PHP
+    - Grav
+    - CMS
+    - Heroku
+    - PaaS
+    - Flat-file
 ---
 When I started building a website (sparked by the purchase of my first personal domain name), I started looking into many different solutions to my web development process. 
 

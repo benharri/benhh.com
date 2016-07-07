@@ -1,7 +1,13 @@
 ---
-title: Why I chose Silex micro-framework for this website
+title: Why I chose Silex for this website
 publish_date: 2016-06-29
 published: true
+tags:
+    - PHP
+    - Silex
+    - Symfony
+    - Framework
+    - Development
 ---
 ### This is an introduction to my choice of framework in building this website.
 
@@ -14,7 +20,7 @@ published: true
     * I have a lot of experience in vanilla PHP at my internship at [Northern Michigan University](http://nmu.edu) working in the Information Services department where I develop web applications for internal use.
     * I often find myself frustrated with PHP's quirkiness and wouldn't learn new material if I used this for my personal website.
 + [Silex](https://silex.sensiolabs.com)
-    * This is a new micro-framework built using components of the much larger [Symfony](https://symfony.com) framework.
+    * This is a micro-framework built using components of the much larger [Symfony](https://symfony.com) framework.
     * I discovered Silex in [Heroku's PHP deployment guide](https://devcenter.heroku.com/articles/getting-started-with-php) where I noticed that it was small enough to not draw unneeded overhead and extensible enough for my website to grow as it needed.
 
 I opted to go with Silex. The source code is available [here](https://github.com/benharri/benhh.com) for your perusal. 

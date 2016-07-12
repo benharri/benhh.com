@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c3b653c3b1b2650e3254a208aa5865c9",
+    "hash": "2d9fec529f315e2311e25eb86842747e",
     "content-hash": "5099a007a81de639ac20bf36abf44291",
     "packages": [
         {
@@ -884,16 +884,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v107",
+            "version": "v108",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "118cfbb3e6940bd6c1a953b0c482f458582162a6"
+                "reference": "afca47645064b9d28a6a7d9e470eb76c076d75b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/118cfbb3e6940bd6c1a953b0c482f458582162a6",
-                "reference": "118cfbb3e6940bd6c1a953b0c482f458582162a6",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/afca47645064b9d28a6a7d9e470eb76c076d75b6",
+                "reference": "afca47645064b9d28a6a7d9e470eb76c076d75b6",
                 "shasum": ""
             },
             "bin": [
@@ -924,7 +924,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2016-06-17 22:36:40"
+            "time": "2016-07-08 21:43:10"
         },
         {
             "name": "myclabs/deep-copy",

@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-
+                <br>
                 <h1>{{ post.title }}</h1>
 
                 <p class="lead">
@@ -39,7 +39,7 @@
     {{ parent() }}
     <script>
     jQuery(document).ready(function($){
-        $(".nav>li#blog").addClass("active");
+        $("#blog").addClass("active");
     });
     </script>
 {% endblock %}

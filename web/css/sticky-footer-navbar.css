@@ -32,8 +32,18 @@ body {
 body > .container {
   padding: 60px 15px 0;
 }
+
+body > .container-fluid {
+  padding: 60px 15px 0;
+}
+
 .container .text-muted {
   margin: 20px 0;
+}
+
+.footer > .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .footer > .container {

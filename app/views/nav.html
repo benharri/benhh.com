@@ -28,21 +28,59 @@
         <!-- /.container -->
     </nav> #}
 
-
-<nav class="navbar navbar-fixed-top navbar-light">
-  <div class="container">
-      <a class="navbar-brand page-scroll" href="#page-top"><strong><em>BHH</em></strong></a>
+{% if scrollnav is defined %}
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        &#9776;
+      </button>
+  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      <div class="container">
+          <a class="navbar-brand page-scroll" href="#page-top"><strong><em style="font-family: 'Cutive Mono', monospace;">BHH</em></strong></a>
+      </div>
+      <div class="container">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/portfolio">Portfolio</a>
+            </li>
+          </ul>
+      </div>
   </div>
-  <ul class="nav navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link page-scroll" href="#about">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link page-scroll" href="#contact">Contact</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/blog">Blog</a>
-    </li>
-    <li class="nav-item"><a href="/portfolio" class="nav-link">Portfolio</a></li>
-  </ul>
 </nav>
+
+{% else %}
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        &#9776;
+      </button>
+  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      <div class="container">
+          <a class="navbar-brand" href="/"><strong><em>BHH</em></strong></a>
+      </div>
+      <div class="container">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item">
+              <a class="nav-link" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/portfolio">Portfolio</a>
+            </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+{% endif %}

@@ -14,11 +14,13 @@
 
             {# <!-- Blog Entries Column --> #}
             <div class="col-md-8">
-
-                <h1 class="page-header">
+                <br>
+                <h1>
                     My Blog
-                    <small>Ben Harris</small>
+                    <small>by Ben Harris</small>
                 </h1>
+
+                <hr>
 
                 {% if alert is defined %}
                     <div class="alert alert-danger" role="alert">{{ alert }}</div>
@@ -31,16 +33,16 @@
                             <a href="{{ slug }}">{{ post.title }}</a>
                         </h2>
                         <p class="lead">
-                            by <a href="{{ post.author_url is defined ? post.author_url : path('homepage')~"#about" }}">{{ post.author ?? "Ben Harris" }}</a>
+                            by <a href="{{ post.author_url ?? path('homepage')~"#about" }}">{{ post.author ?? "Ben Harris" }}</a>
                         </p>
-                        <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}</p>
+                        <p><span class="fa fa-clock-o"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}</p>
                         <hr>
                         {% if post.image is defined %}
-                            <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
+                            <img class="img-fluid" src="{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
                             <hr>
                         {% endif %}
                         <p>{{ post.teaser|raw }}</p>
-                        <a class="btn btn-primary" href="{{ slug }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <a class="btn btn-primary" href="{{ slug }}">Read More <span class="fa fa-chevron-right"></span></a>
 
                         <hr>
                     {% endif %}

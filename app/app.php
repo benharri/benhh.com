@@ -21,10 +21,6 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig', ["scrollnav" => true]);
 })->bind('homepage');
 
-$app->get('/about/', function() use($app) {
-  return $app['twig']->render('index.twig', ["scrollnav" => true]);
-});
-
 // resume.pdf
 $app->get('/resume/', function() use($app) {
   return $app->sendFile(__DIR__.'/../web/resume.pdf');

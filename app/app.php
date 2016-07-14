@@ -2,7 +2,7 @@
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
-$app['debug'] = true;
+// $app['debug'] = true;
 
 ///////////////////////////////////////////////////////////////////////
 // SERVICE PROVIDERS
@@ -20,6 +20,10 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig', ["scrollnav" => true]);
 })->bind('homepage');
+
+$app->get('/about/', function() use($app) {
+  return $app['twig']->render('index.twig', ["scrollnav" => true]);
+});
 
 // resume.pdf
 $app->get('/resume/', function() use($app) {

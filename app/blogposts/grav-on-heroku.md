@@ -1,5 +1,5 @@
 ---
-title: Heroku and Grav flat-file CMS
+title: Heroku with Grav flat-file CMS
 publish_date: 2016-06-24
 image:
   src: /img/lighthouse.jpg

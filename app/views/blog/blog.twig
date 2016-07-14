@@ -29,7 +29,7 @@
                 {% for slug, post in posts %}
                     {# <!-- First Blog Post --> #}
                     {% if post.published is not defined or post.published %}
-                        <h2>
+                        <h2 style="font-family: 'Roboto Mono', monospace;">
                             <a href="{{ slug }}">{{ post.title }}</a>
                         </h2>
                         <span class="fa fa-clock-o"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}

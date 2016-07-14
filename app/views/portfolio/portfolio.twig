@@ -10,17 +10,27 @@
 {% block content %}
 
 <div class="container">
-  <br>
-  <h1>Portfolio</h1>
-  <hr>
-  <div class="alert alert-danger" role="alert">This page is still under construction</div>
-  <p>Here's some work that I'm proud of</p>
-  <a href="{{ path("patternbook") }}" class="btn btn-danger" role="button"><img src="/img/favicon-16x16.png"> My CS326 Patternbook</a>
-  <div class="btn-group">
-    <a href="https://github.com/benharri" class="btn btn-primary" role="button"><span class="fa fa-github"></span> My Github</a>
-    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="https://github.com/benharri/benhh.com"><span class="fa fa-github"></span> This site on Github</a>
+  <div class="row">
+    <div class="col-xs-12">
+      <br>
+      <h1>Portfolio</h1>
+      <hr>
+    </div>
+    <div class="col-xs-12">
+      <div class="alert alert-danger" role="alert">This page is still under construction</div>
+    </div>
+    <div class="col-xs-12">
+      <p>Here's some work that I'm proud of</p>
+    </div>
+    <div class="col-xs-12">
+      <a href="{{ path("patternbook") }}" class="btn btn-danger" role="button"><img src="/img/favicon-16x16.png"> My CS326 Patternbook</a>
+      <div class="btn-group">
+        <a role="button" href="https://github.com/benharri" class="btn btn-primary"><span class="fa fa-github"></span> My Github</a>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://github.com/benharri/benhh.com"><span class="fa fa-github"></span> This site on Github</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

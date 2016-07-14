@@ -21,7 +21,7 @@ class Blog implements ControllerProviderInterface
       }
     }
 
-    usort($blogposts, function ($a, $b) {
+    uasort($blogposts, function ($a, $b) {
       return $b['publish_date'] <=> $a['publish_date'];
     }); // sort blog posts by publish date
 

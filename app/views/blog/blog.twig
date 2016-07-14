@@ -30,7 +30,7 @@
                     {# <!-- First Blog Post --> #}
                     {% if post.published is not defined or post.published %}
                         <h2 style="font-family: 'Cormorant Garamond', serif;">
-                            <a href="{{ slug }}">{{ post.title }}</a>
+                            <a href="{{ url('blog-home') }}{{ slug }}">{{ post.title }}</a>
                         </h2>
                         <span class="fa fa-clock-o"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}
                         {# <span class="lead"> #}

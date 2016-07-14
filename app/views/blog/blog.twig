@@ -49,14 +49,18 @@
                 {% endfor %}
 
                 {# <!-- Pager --> #}
-                <ul class="pager">
-                    <li class="previous">
-                        <a href="#">&larr; Older</a>
-                    </li>
-                    <li class="next">
-                        <a href="#">Newer &rarr;</a>
-                    </li>
-                </ul>
+                {% if posts|length > 10 %}
+                    <ul class="pager">
+                        <li class="previous">
+                            <a href="#">&larr; Older</a>
+                        </li>
+                        <li class="next">
+                            <a href="#">Newer &rarr;</a>
+                        </li>
+                    </ul>
+                {% else %}
+                    <p>That's all there is! Thanks for checking out my blog!</p>
+                {% endif %}
 
             </div>
 

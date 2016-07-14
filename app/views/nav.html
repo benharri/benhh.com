@@ -35,7 +35,7 @@
       </button>
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
       <div class="container">
-          <a class="navbar-brand page-scroll" href="#page-top"><strong><em style="font-family: 'Roboto Mono', monospace;">BHH</em></strong></a>
+          <a class="navbar-brand page-scroll" href="#page-top"><strong style="font-family: 'Roboto Mono', monospace;">BHH</strong></a>
       </div>
       <div class="container">
           <ul class="nav navbar-nav pull-xs-right">
@@ -46,10 +46,10 @@
               <a class="nav-link page-scroll" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ path('blog-home') }}">Blog</a>
+                <a class="nav-link" href="{{ path('portfolio') }}">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ path('portfolio') }}">Portfolio</a>
+              <a class="nav-link" href="{{ path('blog-home') }}">Blog</a>
             </li>
           </ul>
       </div>
@@ -63,21 +63,24 @@
       </button>
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
       <div class="container">
-          <a class="navbar-brand" href="/"><strong><em style="font-family: 'Roboto Mono', monospace;">BHH</em></strong></a>
+          <a class="navbar-brand" href="/"><strong style="font-family: 'Roboto Mono', monospace;">BHH</strong></a>
       </div>
       <div class="container">
           <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item">
-              <a class="nav-link" href="/#about">About</a>
+                <a href="{{ path('homepage') }}" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/#contact">Contact</a>
+              <a class="nav-link" href="{{ path('homepage') }}#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="blog" href="{{ path('blog-home') }}">Blog</a>
+              <a class="nav-link" href="{{ path('homepage') }}#contact">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="portfolio" href="{{ path('portfolio') }}">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="blog" href="{{ path('blog-home') }}">Blog</a>
             </li>
           </ul>
       </div>

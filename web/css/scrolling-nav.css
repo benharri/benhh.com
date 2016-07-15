@@ -33,13 +33,17 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 60px;
     text-align: center;
-    background: #fff;
+    /*background: #fff;*/
     background-image: url("/img/oredock2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.intro-section .jumbotron {
+    height: 35%;
 }
 
 .about-section {

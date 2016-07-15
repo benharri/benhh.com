@@ -7,48 +7,55 @@
   {% include 'patternbook/header.html' %}
 {% endblock %}
 
-{% block nav %}{% include 'patternbook/nav.html' %}{% endblock %}
+{% block nav %}{% include 'patternbook/navbs4.html' %}{% endblock %}
 
 {% block content %}
 <div class="container" role="main">
+<br>
+<h1>{{ pattern.page_header }}</h1>
+<hr>
 
-<div class="page-header">
-  <h1>{{ pattern.page_header }}</h1>
+<div class="row">
+  <div class="col-xs-12 col-md-4">
+    <h4>Problem</h4><hr>
+    <p>{{ pattern.problem|raw }}</p>
+  </div>
+
+  <div class="col-xs-12 col-md-4">
+    <h4>Solution</h4><hr>
+    <p>{{ pattern.solution|raw }}</p>
+  </div>
+
+  <div class="col-xs-12 col-md-4">
+    <h4>Related Patterns</h4><hr>
+    <ul>
+      {% for related_pattern in pattern.related_patterns %}
+        <li>{{ related_pattern|raw }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
 
-<div class="col-xs-12 col-md-4">
-  <h3>Problem</h3>
-  <p>{{ pattern.problem|raw }}</p>
-</div>
-
-<div class="col-xs-12 col-md-4">
-  <h3>Solution</h3>
-  <p>{{ pattern.solution|raw }}</p>
-</div>
-
-<div class="col-xs-12 col-md-4">
-  <h3>Related Patterns</h3>
-  <ul>
-    {% for related_pattern in pattern.related_patterns %}
-      <li>{{ related_pattern|raw }}</li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div class="col-xs-12">
-  <h3>Discussion</h3>
-  <p>{{ pattern.discussion|raw }}</p>
-</div>
-
-<div class="col-xs-12">
-  <h3>Examples</h3>
-  <p>{{ pattern.examples|raw }}</p>
-</div>
-
+<div class="row">
   <div class="col-xs-12">
-    <h3>Code</h3>
-    <p>{{ pattern.code_explanation|raw }}</p>
-    <pre>{{ pattern.code_examples|e }}</pre>
+    <h4>Discussion</h4><hr>
+    <p>{{ pattern.discussion|raw }}</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <h4>Examples</h4><hr>
+    <p>{{ pattern.examples|raw }}</p>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>Code</h4><hr>
+      <p>{{ pattern.code_explanation|raw }}</p>
+      <pre>{{ pattern.code_examples|e }}</pre>
+    </div>
   </div>
 
 </div>

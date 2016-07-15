@@ -21,6 +21,10 @@ class Blog implements ControllerProviderInterface
       }
     }
 
+    uasort($blogposts, function ($a, $b) {
+      return $b['publish_date'] <=> $a['publish_date'];
+    }); // sort blog posts by publish date
+
     foreach($blogposts as &$post){
       preg_match('~([A-z0-9 ,.]|<.*?>){1,300}(?=\s+)~', $post["content"], $matches, PREG_OFFSET_CAPTURE);
       $post["teaser"] = $matches[0][0] . "...";

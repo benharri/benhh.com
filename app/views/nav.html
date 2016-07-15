@@ -1,5 +1,5 @@
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+{#     <nav class="navbar navbar-dark" role="navigation">
         <div class="container">
             <div class="navbar-header{% if scrollnav is defined %} page-scroll{% endif %}">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -26,4 +26,61 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+    </nav> #}
+
+{% if scrollnav is defined %}
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        &#9776;
+      </button>
+  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      <div class="container">
+          <a class="navbar-brand page-scroll" href="#page-top"><strong style="font-family: 'Cormorant Garamond', serif;">BHH</strong></a>
+      </div>
+      <div class="container">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('portfolio') }}">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ path('blog-home') }}">Blog</a>
+            </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+{% else %}
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        &#9776;
+      </button>
+  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      <div class="container">
+          <a class="navbar-brand" href="/"><strong style="font-family: 'Cormorant Garamond', serif;">BHH</strong></a>
+      </div>
+      <div class="container">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ path('homepage') }}#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ path('homepage') }}#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="portfolio" href="{{ path('portfolio') }}">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="blog" href="{{ path('blog-home') }}">Blog</a>
+            </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+{% endif %}

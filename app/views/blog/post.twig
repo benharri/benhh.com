@@ -11,18 +11,18 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-
-                <h1>{{ post.title }}</h1>
+                <br>
+                <h1 style="font-family: 'Cormorant Garamond', serif;">{{ post.title }}</h1>
 
                 <p class="lead">
                     by <a href="{{ post.author_url is defined ? post.author_url : path('homepage')~"#about" }}">{{ post.author ?? "Ben Harris" }}</a>
                 </p>
                 <hr>
 
-                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}</p>
+                <p><span class="fa fa-clock-o"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}</p>
                 <hr>
                 {% if post.image is defined %}
-                    <img class="img-responsive" src="{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
+                    <img class="img-fluid" src="{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
                     <hr>
                 {% endif %}
 
@@ -39,7 +39,7 @@
     {{ parent() }}
     <script>
     jQuery(document).ready(function($){
-        $(".nav>li#blog").addClass("active");
+        $("#blog").addClass("active");
     });
     </script>
 {% endblock %}

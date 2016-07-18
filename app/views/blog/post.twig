@@ -19,10 +19,15 @@
                 </p>
                 <hr>
 
-                <p><span class="fa fa-clock-o"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}</p>
+                {% if post.published is defined and not post.published %}
+                    <div class="alert alert-danger" role="alert">Post not published</div>
+                {% else %}
+                    <p><span class="fa fa-clock-o"></span> Posted on {{ post.publish_date|date("l, F jS Y") }}</p>
+                {% endif %}
+
                 <hr>
                 {% if post.image is defined %}
-                    <img class="img-fluid" src="{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
+                    <img class="img-fluid" src="/img/blog/{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
                     <hr>
                 {% endif %}
 

@@ -11,7 +11,7 @@ class Blog implements ControllerProviderInterface
     $blog = $app['controllers_factory'];
 
     $parser = new \Mni\FrontYAML\Parser();
-    $dir    = __DIR__."/../blogposts";
+    $dir    = __DIR__."/../../blogposts";
     $dirit  = new \DirectoryIterator($dir);
     foreach($dirit as $file){
       if(!$file->isDot()){

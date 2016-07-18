@@ -2,7 +2,7 @@
 title: Telegram Gets Slammed in the Blogosphere
 publish_date: 2016-06-29
 image:
-    src: /img/telegram_banner.png
+    src: telegram_banner.png
     alt: Telegram Banner
 published: false
 ---

@@ -3,7 +3,7 @@ title: Why I chose Silex for this website
 publish_date: 2016-06-29
 published: true
 image:
-    src: /img/mackinac.jpg
+    src: mackinac.jpg
     alt: Me
 tags:
     - PHP

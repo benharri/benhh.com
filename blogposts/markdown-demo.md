@@ -4,7 +4,7 @@ author: markdown-it.github.io
 author_url: http://markdown-it.github.io
 publish_date: 2016-06-28
 image:
-  src: /img/fribourg.jpg
+  src: fribourg.jpg
   alt: Fribourg
 published: false
 ---

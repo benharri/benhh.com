@@ -2,7 +2,7 @@
 title: Heroku with Grav flat-file CMS
 publish_date: 2016-06-25
 image:
-  src: lighthouse.jpg
+  src: /img/blog/lighthouse.jpg
   alt: Marquette Lighthouse
 tags:
     - PHP

@@ -3,7 +3,7 @@ title: Republican National Convention in Cleveland - Day One
 publish_date: 2016-07-18
 published: false
 image:
-    src: christie.jpg
+    src: /img/blog/christie.jpg
     alt: New Jersey Governor Chris Christie at the Michigan Delegation Breakfast
 tags:
     - RNC

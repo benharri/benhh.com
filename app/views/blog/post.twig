@@ -27,7 +27,7 @@
 
                 <hr>
                 {% if post.image is defined %}
-                    <img class="img-fluid" src="/img/blog/{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
+                    <img class="img-fluid" src="{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
                     <hr>
                 {% endif %}
 

@@ -8,7 +8,7 @@ image:
 tags:
     - RNC
     - Politics
-    - Political Conventions
+    - National Conventions
 ---
 
 # Republican National Convention in Cleveland - Day One
@@ -20,3 +20,10 @@ Michigan delegates to the Republican National Convention got fired up for New Je
 However, the enthusiasm for Trump was not as strong as expected. The emphasis was placed on bashing Hillary, rather than promoting a Trump presidency. It makes sense, as it's very hard to promote a candidate who has nothing to offer.
 
 The scene downtown has also been more peaceful than expected.
+
+Any mention of Hillary Clinton's name
+
+"goodness of his heart"
+"a man who knows how to get things done"
+"a man who says what he means and means what he says"
+"Make America America again"

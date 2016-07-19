@@ -10,7 +10,7 @@ tags:
     - Politics
     - National Conventions
 ---
-> Disclaimer: The following article represents my opinions and should be interpreted as such.
+### Disclaimer: The following article represents my opinions and should be interpreted as such.
 
 Michigan delegates to the Republican National Convention got fired up for New Jersey Governor Chris Christie as he addressed them this morning at their first breakfast meeting. Christie stressed the importance of party unity behind the presumptive nominee, Donald Trump. 
 
@@ -31,4 +31,7 @@ and will
 
 It's really showing that the Republican Party had trouble finding people to speak here at the convention. What place do reality TV stars have in our political process? 
 
-Overall, it's a disturbing display of the state of discontent in our country.
+Overall, it's a disturbing display of the state of our country.
+
+_UPDATE: Melania's Plagiarism of Michelle's 2008 speech_ <blockquote class="twitter-video" data-lang="en"><p lang="en" dir="ltr">So that&#39;s pretty blatant, right? <a href="https://t.co/EPnHME7afV">pic.twitter.com/EPnHME7afV</a></p>&mdash; Mike Hearn (@mikehearn) <a href="https://twitter.com/mikehearn/status/755260215021432832">July 19, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

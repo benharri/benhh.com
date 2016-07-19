@@ -28,10 +28,14 @@
                 <hr>
                 {% if post.image is defined %}
                     <img class="img-fluid" src="{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
+                    {% if post.image.caption is defined %}
+                        <p class="text-xs-center"><em>{{ post.image.caption }}</em></p>
+                    {% endif %}
                     <hr>
                 {% endif %}
 
-                <p class="lead">{{ post.content|raw }}</p>
+                {{ post.content|raw }}
+
                 <hr>
             </div>
             {{ include('blog/sidebar.html') }}

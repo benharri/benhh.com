@@ -5,6 +5,7 @@ published: false
 image:
     src: /img/blog/christie.jpg
     alt: New Jersey Governor Chris Christie at the Michigan Delegation Breakfast
+    caption: New Jersey Governor Chris Christie at the Michigan Delegation Breakfast
 tags:
     - RNC
     - Politics

@@ -7,7 +7,7 @@ tags:
   - Politics
   - National Conventions
 ---
-\#bluelivesmatter completely misses the point. And it makes #AllLivesMatter hypocritical. 
+\#BlueLivesMatter completely misses the point. And it makes #AllLivesMatter hypocritical. 
 
 ![mandatory cartoon](http://chainsawsuit.com/wp-content/uploads/2016/07/20160707_allhousesredux-506x500.png)
 

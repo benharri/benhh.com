@@ -1,5 +1,5 @@
 ---
-title: Cleveland RNC Day One
+title: Republican National Convention in Cleveland - Day One
 publish_date: 2016-07-18
 published: false
 image:
@@ -10,20 +10,25 @@ tags:
     - Politics
     - National Conventions
 ---
-
-# Republican National Convention in Cleveland - Day One
-
 > Disclaimer: The following article represents my opinions and should be interpreted as such.
 
 Michigan delegates to the Republican National Convention got fired up for New Jersey Governor Chris Christie as he addressed them this morning at their first breakfast meeting. Christie stressed the importance of party unity behind the presumptive nominee, Donald Trump. 
 
 However, the enthusiasm for Trump was not as strong as expected. The emphasis was placed on bashing Hillary, rather than promoting a Trump presidency. It makes sense, as it's very hard to promote a candidate who has nothing to offer.
 
-The scene downtown has also been more peaceful than expected.
+The scene downtown has been peaceful so far. There are, however, huge crowds, but everyone has been respectful aside from some jeers and boos for Hillary.
 
-Any mention of Hillary Clinton's name
+We have had to take turns in the convention center, as we only have three (of which only two are valid for entering the arena itself) passes for six people. 
 
-"goodness of his heart"
-"a man who knows how to get things done"
-"a man who says what he means and means what he says"
-"Make America America again"
+At the convention center, any mention of Hillary Clinton's name generates a huge boo from the audience.
+
+According to Willie Robertson, of Duck Dynasty fame, Trump is:
++ "a man who knows how to get things done"
++ "a man who says what he means and means what he says"
+
+and will
++ "Make America America again"
+
+It's really showing that the Republican Party had trouble finding people to speak here at the convention. What place do reality TV stars have in our political process? 
+
+Overall, it's a disturbing display of the state of discontent in our country.

@@ -12,7 +12,7 @@ tags:
 ---
 Our second day at the RNC began once again at the Michigan Delegation Breakfast Session. 
 
-Michigan Speaker of the House Kevin Cotter addressed the delegation with a report on the state of the state. 
+Michigan Speaker of the House Kevin Cotter addressed the delegation with a report on the state of the state. His moderate, compromising stance was all but booed out by the delegation. To me, this highlighted the increasing radicalization of partisan politics. The one reasonable politician who understands that things get done through compromise is now criticized for not doing enough for the "party."
 
 Despite not attending the RNC itself, Ohio Governor John Kasich 
 

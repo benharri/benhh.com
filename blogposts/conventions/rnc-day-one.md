@@ -3,7 +3,7 @@ title: Republican National Convention in Cleveland - Day One
 publish_date: 2016-07-18
 published: true
 image:
-    src: https://lh3.googleusercontent.com/LUKxqtT7OGct3NhN7t56O1rhwinYg8Wo_LIG4P9Vi7Y87r_APKWy3Wj7KWGEY4SMDzWCOffMR3inn5_EhY0e9LXFcwq7TQjnXcShT_VUI7kEqKAAYq9TXYeyKhMi5Fx0KlbNw-Dwdg3rkkHbwrQoaUSTrr7-0H1RU8OVpgxvjk41p96yjPKTt6llay6frkvLgO5OZMLl3W3hrE6QrMLGuJslzcp_RIyaSeh-iFX3VgTIzBVpmLGBaZMJemnszdx1ry8ipoHigmf9ynkxQq-AyLLACJ-3neC4HLy8cklfYs0wwsX62-dEsZoXn0unl07CGt1DD5uBMeMbWTYxrRpM-JEP7PXyTS0Lump-VPQY4iv2zqjGisWLnsEkpQfGFIkvRkVByCK_2gk_8MMCKGnApePoeNgHFDtmkjOauWlBsAWzFJexT07wHLKVEc5q9t2izHOHRUMiiCcIx-0SnZX-uZUoG5NAErrv3mPHJi5Pwy-R53hPx--JuJGbmflUnflaz1kMpzFlrVjMMKykCgSvRdRUbo6x8Te5h4SNCg2p-vBdihElyHwJ6b__e9Rt7M__TXgR3PAoQza-acvsUrdee-WtW1O5ufp0=w1187-h672-no
+    src: /img/blog/christie.jpg
     alt: New Jersey Governor Chris Christie at the Michigan Delegation Breakfast
     caption: New Jersey Governor Chris Christie at the Michigan Delegation Breakfast
 tags:

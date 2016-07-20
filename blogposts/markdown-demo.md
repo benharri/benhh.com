@@ -1,12 +1,12 @@
 ---
 title: Markdown Demo
+publish_date: 2016-06-28
+published: false
 author: markdown-it.github.io
 author_url: http://markdown-it.github.io
-publish_date: 2016-06-28
 image:
   src: /img/blog/fribourg.jpg
   alt: Fribourg
-published: false
 ---
 # h1 Heading 8-)
 ## h2 Heading

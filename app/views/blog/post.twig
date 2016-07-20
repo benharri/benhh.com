@@ -29,7 +29,7 @@
                 {% if post.image is defined %}
                     <img class="img-fluid" src="{{ post.image.src }}" alt="{{ post.image.alt ?? "" }}">
                     {% if post.image.caption is defined %}
-                        <p class="text-xs-center"><em>{{ post.image.caption }}</em></p>
+                        <p><em>{{ post.image.caption }}</em></p>
                     {% endif %}
                     <hr>
                 {% endif %}

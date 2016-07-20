@@ -12,23 +12,23 @@ class Blog implements ControllerProviderInterface
 
     $parser = new \Mni\FrontYAML\Parser();
     $dir    = __DIR__."/../../blogposts";
-    $dirit  = new \DirectoryIterator($dir);
-    foreach($dirit as $file){
-      if(!$file->isDot()){
+    $dir_iter  = new \DirectoryIterator($dir);
+    foreach($dir_iter as $file){
+      if($file->isDot()) continue;
+      if($file->isDir()){
+        $subdir = $dir .'/'. $file->getFilename();
+        $subdir_iter = new \DirectoryIterator($subdir);
+        foreach($subdir_iter as $subdirfile){
+          if(!$subdirfile->isDot()){
+            $subdoc = $parser->parse(file_get_contents($subdir.'/'.$subdirfile));
+            $blogposts[$file.""][basename($subdirfile, ".md")]            = $subdoc->getYAML();
+            $blogposts[$file.""][basename($subdirfile, ".md")]["content"] = $subdoc->getContent();
+          }
+        }
+      } else {
         $doc = $parser->parse(file_get_contents($dir.'/'.$file));
         $blogposts["blog-main"][basename($file, ".md")]            = $doc->getYAML();
         $blogposts["blog-main"][basename($file, ".md")]["content"] = $doc->getContent();
-
-        if($file->isDir()){
-          $subdirit = new \DirectoryIterator($dir .'/'. $file->getFilename());
-          foreach($subdirit as $subdirfile){
-            if(!$subdirfile->isDot()){
-              $subdoc = $parser->parse(file_get_contents($subdir.'/'.$subdirfile));
-              $blogposts[$subdirfile->getFilename()][basename($subdirfile, ".md")]            = $subdoc->getYAML();
-              $blogposts[$subdirfile->getFilename()][basename($subdirfile, ".md")]["content"] = $subdoc->getContent();
-            }
-          }
-        }
       }
     }
 
@@ -46,17 +46,8 @@ class Blog implements ControllerProviderInterface
     // ROUTES
     $blog->get('/', function() use($app, $blogposts) {
 
-      foreach($blogposts as $blogdir){
-        foreach($blogdir as $post){
-          if($post["published"]) $all_posts[] = $post;
-        }
-      }
-
-      // echo '<pre>$blogposts Dump ';
-      // print_r($all_posts);
-      // echo '</pre>';die();
       return $app['twig']->render('blog/blog.twig',
-        ['posts' => $all_posts]
+        ['posts' => $blogposts]
       );
     })->bind('blog-home');
 
@@ -74,6 +65,7 @@ class Blog implements ControllerProviderInterface
     })->bind('blog-post');
 
     $blog->get('/{folder}/{slug}/', function($folder, $slug) use($app, $blogposts) {
+      // return $blogposts[$folder][$slug];
       if(empty($blogposts[$folder][$slug])){
         return $app['twig']->render('blog/blog.twig',
           ['alert' => 'Blog post not found. You may have a typo in your URL.',

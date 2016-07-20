@@ -34,7 +34,7 @@ class Blog implements ControllerProviderInterface
 
     foreach($blogposts as &$blogdir){
       uasort($blogdir, function ($a, $b) {
-        return $b['publish_date'] <=> $a['publish_date'];
+        return $a['publish_date'] <=> $b['publish_date'];
       }); // sort blog posts by publish date
 
       foreach($blogdir as &$post){

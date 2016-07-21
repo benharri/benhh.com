@@ -1,3 +1,4 @@
 /vendor*
 .DS_Store
-/web/bootstrap4/
+web/bootstrap4/*
+!web/bootstrap4/dist/

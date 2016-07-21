@@ -12,6 +12,8 @@ tags:
   - National Conventions
   - Politics
 ---
+__UPDATE__ looks like an article of convention notes by two of our reporters ran in the [Mining Journal](http://www.miningjournal.net/page/content.detail/id/643873/Notes-from-the-convention-hall.html?nav=5192)! 
+
 ### This is a collection of some of my thoughts from watching various speakers at the conventions. No editing here...
 
 guy shouts under __GOD__ during the pledge of allegiance
@@ -38,5 +40,4 @@ repubs want smaller govt but want to regulate personal freedoms. wut.
 
 white privilege
 
-__UPDATE__ looks like an article of convention notes by two of our reporters ran in the [Mining Journal](http://www.miningjournal.net/page/content.detail/id/643873/Notes-from-the-convention-hall.html?nav=5192)! 
 

@@ -2,6 +2,7 @@
 title: Blue Lives Matter? I thought All lives matter
 publish_date: 2016-07-18
 published: true
+category: conventions
 tags:
   - RNC
   - Politics

@@ -2,6 +2,7 @@
 title: Republican National Convention in Cleveland - Day Three
 publish_date: 2016-07-20
 published: true
+category: conventions
 image:
   src: /img/blog/q.jpg
   alt: Quicken Loans Arena

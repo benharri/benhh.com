@@ -1,7 +1,8 @@
 ---
 title: Republican National Convention in Cleveland - Day Four
 publish_date: 2016-07-21
-published: false
+published: true
+category: conventions
 <!-- image:
   src: 
   alt: 
@@ -11,7 +12,7 @@ tags:
   - National Conventions
   - Politics
 ---
-Hello
+### This is a collection of some of my thoughts from watching various speakers at the conventions. No editing here...
 
 guy shouts under __GOD__ during the pledge of allegiance
 
@@ -25,6 +26,8 @@ Bring in the evangelicals that we lost
 
 Abide by radical right platform *applause, standing ovation*
 
+Kill all the _terrorists_.
+
 thanks, god
 
 salvation only for our friends and no one who is different from us
@@ -33,10 +36,7 @@ mike pence amazing- nope, devil incarnate
 
 repubs want smaller govt but want to regulate personal freedoms. wut.
 
-Michigan Secretary of State Ruth Johnson
-SoS moving online
-abe lincoln 16th president - 16 pennies
-heckuva beer party
-let's have great success in november
 white privilege
+
+__UPDATE__ looks like an article of convention notes by two of our reporters ran in the [Mining Journal](http://www.miningjournal.net/page/content.detail/id/643873/Notes-from-the-convention-hall.html?nav=5192)! 
 

@@ -19,6 +19,10 @@
                 </p>
                 <hr>
 
+                {% if alert is defined %}
+                    <div class="alert alert-danger" role="alert">{{ alert|raw }}</div>
+                {% endif %}
+
                 {% if post.published is defined and not post.published %}
                     <div class="alert alert-danger" role="alert">Post not published</div>
                 {% else %}

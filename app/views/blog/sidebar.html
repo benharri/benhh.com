@@ -4,14 +4,16 @@
                 <!-- Blog Search card -->
                 <div class="card card-block">
                     <h4 class="card-title">Blog Search</h4>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
-                                <span class="fa fa-search"></span>
-                        </button>
-                        </span>
-                    </div>
+                    <form action="{{ url('blog-search') }}" method="get">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <span class="fa fa-search"></span>
+                            </button>
+                            </span>
+                        </div>
+                    </form>
                 </div>
 
                 {% if post.tags is defined %}

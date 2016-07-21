@@ -18,7 +18,7 @@ class YourTest extends WebTestCase {
     $crawler = $client->request('GET', '/');
 
     $this->assertTrue($client->getResponse()->isOk());
-    $this->assertCount(1, $crawler->filter('h1:contains("BENJAMIN HAMILTON HARRIS")'));
+    $this->assertCount(1, $crawler->filter('h1:contains("Benjamin Hamilton Harris")'));
 
   }
 

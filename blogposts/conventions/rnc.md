@@ -12,6 +12,8 @@ tags:
 ---
 I was asked to chaperone a group of youth journalists with 8-18 Media (a youth journalism program in Marquette that I was once a part of)
 
+__Disclaimer:__ these blog posts represent my opinion!
+
 I plan on writing a post for each day of the RNC journaling my thoughts about the event.
 + [Day One](/blog/conventions/rnc-day-one)
 + [Day Two](/blog/conventions/rnc-day-two)

@@ -43,3 +43,6 @@ This is an excerpt of some notes that I made while watching the convention.
 Tonight was Republican Vice Presidential nominee Mike Pence's first appearance on the stage of the convention. It's interesting to see him finally joining the Trump train. Especially in contrast to his [endorsement](http://www.indystar.com/story/opinion/2016/05/01/mike-pence-will-vote-ted-cruz/83792658/) of Ted Cruz back in time for the primaries. He seems fully aware of how boring he is, making a point to mention it to the audience.
 
 Another interesting day at the Republican National Convention.
+
+__Bonus video__
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WFjDBvRxcbM" frameborder="0" allowfullscreen></iframe>

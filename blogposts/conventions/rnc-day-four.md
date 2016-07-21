@@ -3,10 +3,10 @@ title: Republican National Convention in Cleveland - Day Four
 publish_date: 2016-07-21
 published: true
 category: conventions
-<!-- image:
-  src: 
-  alt: 
-  caption:  -->
+image:
+  src: /img/blog/outdoors_at_convention.jpg
+  alt: Food and music outdoors
+  caption: Food and music outside the convention hall
 tags:
   - RNC
   - National Conventions

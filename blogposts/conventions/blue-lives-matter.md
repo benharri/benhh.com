@@ -10,7 +10,7 @@ tags:
 ---
 \#BlueLivesMatter completely misses the point. And it makes #AllLivesMatter hypocritical. 
 
-![mandatory cartoon](http://chainsawsuit.com/wp-content/uploads/2016/07/20160707_allhousesredux-506x500.png)
+<img max-width="900" src="http://chainsawsuit.com/wp-content/uploads/2016/07/20160707_allhousesredux-506x500.png" class="img-fluid">
 
 This cartoon says it all. 
 

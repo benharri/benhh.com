@@ -2,6 +2,7 @@
 title: The Party of Lincoln
 publish_date: 2016-07-21
 published: true
+category: conventions
 image:
   src: /img/blog/lincoln.png
   alt: Abe Lincoln

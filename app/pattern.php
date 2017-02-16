@@ -1010,7 +1010,7 @@ EOT;
 
 
 default:
-  header("Location: http://euclid.nmu.edu/~benharri/patternbook/?error&notfound=$pattern"); die();
+  header("Location: /notfound/$pattern/"); die();
   break;
 
 }

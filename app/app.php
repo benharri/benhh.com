@@ -2,7 +2,7 @@
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application();
-// $app['debug'] = true;
+$app['debug'] = true;
 
 ///////////////////////////////////////////////////////////////////////
 // SERVICE PROVIDERS
@@ -24,6 +24,8 @@ $app->get('/{pattern}/', function($pattern) use($app) {
   return $app['twig']->render('patternbook/pattern.twig', ['pattern' => $pattern_info]);
 })->bind('pattern');
 
-
+$app->get('/notfound/{q}/', function($q) use($app) {
+    return $app['twig']->render('patternbook/index.twig', ['errormsg' => "$q not found"]);
+});
 
 return $app;

@@ -21,6 +21,10 @@
 
 <div class="container" role="main">
 
+  {% if errormsg is defined %}
+    <div class="alert alert-warning">{{ errormsg }}</div>
+  {% endif %}
+
   <h3>Ben Harris' Pattern Book</h3><hr>
 
   <p>This is collection of experiences I have noticed in my experiences with software development so far.</p>

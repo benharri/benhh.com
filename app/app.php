@@ -15,25 +15,15 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ///////////////////////////////////////////////////////////////////////
 // ROUTES
 ///////////////////////////////////////////////////////////////////////
-
-// index
 $app->get('/', function() use($app) {
-  return $app['twig']->render('index.twig', ["scrollnav" => true]);
-})->bind('homepage');
+      return $app['twig']->render('patternbook/index.twig');
+    })->bind('patternbook');
 
-// resume.pdf
-$app->get('/resume/', function() use($app) {
-  return $app->sendFile(__DIR__.'/../web/resume.pdf');
-})->bind('resume');
+$app->get('/{pattern}/', function($pattern) use($app) {
+  require "pattern.php";
+  return $app['twig']->render('patternbook/pattern.twig', ['pattern' => $pattern_info]);
+})->bind('pattern');
 
-// solitaire
-$app->get('/solitaire/', function() use($app) {
-  return $app['twig']->render('solitaire.html');
-});
 
-// app/controllers
-$app->mount('/portfolio/', new benharri\controllers\Portfolio());
-$app->mount('/blog/', new benharri\controllers\Blog());
-$app->mount('/patternbook/', new benharri\controllers\Patternbook());
 
 return $app;
